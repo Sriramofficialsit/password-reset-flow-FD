@@ -17,7 +17,7 @@ const Login = () => {
     }
     setLoading(true);
     try {
-      const response = await axios.post(`https://password-reset-flow-ni15.onrender.com/auth/forget-password`, { username });
+      const response = await axios.post(`https://password-reset-flow-be-2-0.onrender.com/auth/forget-password`, { username });
 
       setMessage(response.data.message);
     } catch (error) {
